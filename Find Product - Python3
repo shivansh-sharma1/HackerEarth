@@ -1,0 +1,6 @@
+n=int(input())
+l=[int(x) for x in input().split()]
+prod=1
+for i in range(n):
+    prod=(prod*l[i])%(1000000007)
+print(prod)
