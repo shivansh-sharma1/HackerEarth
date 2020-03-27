@@ -1,0 +1,10 @@
+t=int(input())
+for i in range(t):
+    string=input()
+    l=len(string)
+    total=0
+    for i in range(l):
+        if string[i] in 'aeiouAEIOU':
+            total=total+(i+1)*(l-i)
+            # print("(",i+1,l-i,")",total)
+    print(total)
