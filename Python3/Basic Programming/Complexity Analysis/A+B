@@ -1,0 +1,7 @@
+m,n=list(map(int,input().split()))
+while True:
+    try:
+        print(m+n)
+        m,n=list(map(int,input().split()))
+    except EOFError as e:
+        break
