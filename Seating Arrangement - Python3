@@ -1,0 +1,45 @@
+n=int(input())
+lst=[]
+for i in range(0,n):
+    i=int(input())
+    lst.append(i)
+for i in range(0,len(lst)):
+    if 1<=lst[i]<=6 or 13<=lst[i]<=18 or 25<=lst[i]<=30 or 37<=lst[i]<=42 or 49<=lst[i]<=54 or 61<=lst[i]<=66 or 73<=lst[i]<=78 or 85<=lst[i]<=90 or 97<=lst[i]<=102:
+        if lst[i]%6==0:
+            seat="WS"
+            FS=lst[i]+1 
+        elif lst[i]%6==1:
+            seat="WS"
+            FS=lst[i]+11
+        elif lst[i]%6==2:
+            seat="MS"
+            FS=lst[i]+9
+        elif lst[i]%6==5:
+            seat="MS"
+            FS=lst[i]+3
+        elif lst[i]%6==3:
+            seat="AS"
+            FS=lst[i]+7
+        elif lst[i]%6==4:
+            seat="AS"
+            FS=lst[i]+5
+    else:
+        if lst[i]%6==0:
+            seat="WS"
+            FS=lst[i]-11 
+        elif lst[i]%6==1:
+            seat="WS"
+            FS=lst[i]-1
+        elif lst[i]%6==2:
+            seat="MS"
+            FS=lst[i]-3
+        elif lst[i]%6==5:
+            seat="MS"
+            FS=lst[i]-9
+        elif lst[i]%6==3:
+            seat="AS"
+            FS=lst[i]-5
+        elif lst[i]%6==4:
+            seat="AS"
+            FS=lst[i]-7    
+    print(FS,seat)
