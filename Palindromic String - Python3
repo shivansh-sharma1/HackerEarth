@@ -1,0 +1,8 @@
+s=input()
+s=list(s)
+l=s.copy()
+l.reverse()
+if(s==l):
+    print("YES")
+else:
+    print("NO")
